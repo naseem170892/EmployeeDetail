@@ -8,24 +8,104 @@
 
 /* Begin PBXBuildFile section */
 		DF58A1231F14A421003A3075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1221F14A421003A3075 /* AppDelegate.swift */; };
-		DF58A1251F14A421003A3075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1241F14A421003A3075 /* ViewController.swift */; };
+		DF58A1251F14A421003A3075 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1241F14A421003A3075 /* TableViewController.swift */; };
 		DF58A1281F14A421003A3075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF58A1261F14A421003A3075 /* Main.storyboard */; };
 		DF58A12A1F14A421003A3075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF58A1291F14A421003A3075 /* Assets.xcassets */; };
 		DF58A12D1F14A421003A3075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF58A12B1F14A421003A3075 /* LaunchScreen.storyboard */; };
+		DF58A1351F14A543003A3075 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1341F14A543003A3075 /* Model.swift */; };
+		DF58A1371F14A575003A3075 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1361F14A575003A3075 /* Constant.swift */; };
+		DF58A1391F14A6AE003A3075 /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1381F14A6AE003A3075 /* EmployeeDetailViewController.swift */; };
+		DF58A13B1F14A98B003A3075 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A13A1F14A98B003A3075 /* CustomCell.swift */; };
+		DF58A1421F14AA8F003A3075 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF58A1401F14AA8F003A3075 /* Interface.storyboard */; };
+		DF58A1441F14AA8F003A3075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF58A1431F14AA8F003A3075 /* Assets.xcassets */; };
+		DF58A14B1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DF58A14A1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF58A1521F14AA8F003A3075 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1511F14AA8F003A3075 /* InterfaceController.swift */; };
+		DF58A1541F14AA8F003A3075 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1531F14AA8F003A3075 /* ExtensionDelegate.swift */; };
+		DF58A1561F14AA8F003A3075 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1551F14AA8F003A3075 /* NotificationController.swift */; };
+		DF58A1581F14AA90003A3075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF58A1571F14AA8F003A3075 /* Assets.xcassets */; };
+		DF58A15C1F14AA90003A3075 /* FirstWatchOSApp WatchKit Extension.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DF58A13E1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension.app */; };
+		DF58A1661F14AB05003A3075 /* MainTableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1651F14AB05003A3075 /* MainTableType.swift */; };
+		DF58A1681F14C181003A3075 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1341F14A543003A3075 /* Model.swift */; };
+		DF58A1691F14C184003A3075 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58A1361F14A575003A3075 /* Constant.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF58A14C1F14AA8F003A3075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF58A1171F14A421003A3075 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF58A1491F14AA8F003A3075;
+			remoteInfo = "FirstWatchOSApp WatchKit Extension Extension";
+		};
+		DF58A15A1F14AA90003A3075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF58A1171F14A421003A3075 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF58A13D1F14AA8F003A3075;
+			remoteInfo = "FirstWatchOSApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF58A1601F14AA90003A3075 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DF58A14B1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF58A1641F14AA90003A3075 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DF58A15C1F14AA90003A3075 /* FirstWatchOSApp WatchKit Extension.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DF58A11F1F14A421003A3075 /* EmployeeDetail_WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeDetail_WatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF58A1221F14A421003A3075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF58A1241F14A421003A3075 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF58A1241F14A421003A3075 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DF58A1271F14A421003A3075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF58A1291F14A421003A3075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF58A12C1F14A421003A3075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF58A12E1F14A421003A3075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF58A1341F14A543003A3075 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DF58A1361F14A575003A3075 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		DF58A1381F14A6AE003A3075 /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
+		DF58A13A1F14A98B003A3075 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		DF58A13E1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirstWatchOSApp WatchKit Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF58A1411F14AA8F003A3075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DF58A1431F14AA8F003A3075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF58A1451F14AA8F003A3075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF58A14A1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FirstWatchOSApp WatchKit Extension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF58A1501F14AA8F003A3075 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DF58A1511F14AA8F003A3075 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DF58A1531F14AA8F003A3075 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DF58A1551F14AA8F003A3075 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DF58A1571F14AA8F003A3075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF58A1591F14AA90003A3075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF58A1651F14AB05003A3075 /* MainTableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DF58A11C1F14A421003A3075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF58A1471F14AA8F003A3075 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +118,10 @@
 		DF58A1161F14A421003A3075 = {
 			isa = PBXGroup;
 			children = (
+				DF58A1671F14AE35003A3075 /* Common */,
 				DF58A1211F14A421003A3075 /* EmployeeDetail_WatchOS */,
+				DF58A13F1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension */,
+				DF58A14E1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension */,
 				DF58A1201F14A421003A3075 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				DF58A11F1F14A421003A3075 /* EmployeeDetail_WatchOS.app */,
+				DF58A13E1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension.app */,
+				DF58A14A1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,12 +140,56 @@
 			isa = PBXGroup;
 			children = (
 				DF58A1221F14A421003A3075 /* AppDelegate.swift */,
-				DF58A1241F14A421003A3075 /* ViewController.swift */,
+				DF58A1241F14A421003A3075 /* TableViewController.swift */,
+				DF58A1381F14A6AE003A3075 /* EmployeeDetailViewController.swift */,
+				DF58A13A1F14A98B003A3075 /* CustomCell.swift */,
 				DF58A1261F14A421003A3075 /* Main.storyboard */,
 				DF58A1291F14A421003A3075 /* Assets.xcassets */,
 				DF58A12B1F14A421003A3075 /* LaunchScreen.storyboard */,
 				DF58A12E1F14A421003A3075 /* Info.plist */,
 			);
+			path = EmployeeDetail_WatchOS;
+			sourceTree = "<group>";
+		};
+		DF58A13F1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DF58A1401F14AA8F003A3075 /* Interface.storyboard */,
+				DF58A1431F14AA8F003A3075 /* Assets.xcassets */,
+				DF58A1451F14AA8F003A3075 /* Info.plist */,
+			);
+			path = "FirstWatchOSApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DF58A14E1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DF58A1511F14AA8F003A3075 /* InterfaceController.swift */,
+				DF58A1531F14AA8F003A3075 /* ExtensionDelegate.swift */,
+				DF58A1551F14AA8F003A3075 /* NotificationController.swift */,
+				DF58A1651F14AB05003A3075 /* MainTableType.swift */,
+				DF58A1571F14AA8F003A3075 /* Assets.xcassets */,
+				DF58A1591F14AA90003A3075 /* Info.plist */,
+				DF58A14F1F14AA8F003A3075 /* Supporting Files */,
+			);
+			path = "FirstWatchOSApp WatchKit Extension Extension";
+			sourceTree = "<group>";
+		};
+		DF58A14F1F14AA8F003A3075 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF58A1501F14AA8F003A3075 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF58A1671F14AE35003A3075 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DF58A1341F14A543003A3075 /* Model.swift */,
+				DF58A1361F14A575003A3075 /* Constant.swift */,
+			);
+			name = Common;
 			path = EmployeeDetail_WatchOS;
 			sourceTree = "<group>";
 		};
@@ -74,15 +203,51 @@
 				DF58A11B1F14A421003A3075 /* Sources */,
 				DF58A11C1F14A421003A3075 /* Frameworks */,
 				DF58A11D1F14A421003A3075 /* Resources */,
+				DF58A1641F14AA90003A3075 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DF58A15B1F14AA90003A3075 /* PBXTargetDependency */,
 			);
 			name = EmployeeDetail_WatchOS;
 			productName = EmployeeDetail_WatchOS;
 			productReference = DF58A11F1F14A421003A3075 /* EmployeeDetail_WatchOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DF58A13D1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF58A1611F14AA90003A3075 /* Build configuration list for PBXNativeTarget "FirstWatchOSApp WatchKit Extension" */;
+			buildPhases = (
+				DF58A13C1F14AA8F003A3075 /* Resources */,
+				DF58A1601F14AA90003A3075 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF58A14D1F14AA8F003A3075 /* PBXTargetDependency */,
+			);
+			name = "FirstWatchOSApp WatchKit Extension";
+			productName = "FirstWatchOSApp WatchKit Extension";
+			productReference = DF58A13E1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DF58A1491F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF58A15D1F14AA90003A3075 /* Build configuration list for PBXNativeTarget "FirstWatchOSApp WatchKit Extension Extension" */;
+			buildPhases = (
+				DF58A1461F14AA8F003A3075 /* Sources */,
+				DF58A1471F14AA8F003A3075 /* Frameworks */,
+				DF58A1481F14AA8F003A3075 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FirstWatchOSApp WatchKit Extension Extension";
+			productName = "FirstWatchOSApp WatchKit Extension Extension";
+			productReference = DF58A14A1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +260,14 @@
 				ORGANIZATIONNAME = "Naseem Ahmad";
 				TargetAttributes = {
 					DF58A11E1F14A421003A3075 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					DF58A13D1F14AA8F003A3075 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					DF58A1491F14AA8F003A3075 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +287,8 @@
 			projectRoot = "";
 			targets = (
 				DF58A11E1F14A421003A3075 /* EmployeeDetail_WatchOS */,
+				DF58A13D1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension */,
+				DF58A1491F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +304,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF58A13C1F14AA8F003A3075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF58A1441F14AA8F003A3075 /* Assets.xcassets in Resources */,
+				DF58A1421F14AA8F003A3075 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF58A1481F14AA8F003A3075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF58A1581F14AA90003A3075 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,12 +328,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF58A1251F14A421003A3075 /* ViewController.swift in Sources */,
+				DF58A1351F14A543003A3075 /* Model.swift in Sources */,
+				DF58A1251F14A421003A3075 /* TableViewController.swift in Sources */,
 				DF58A1231F14A421003A3075 /* AppDelegate.swift in Sources */,
+				DF58A1371F14A575003A3075 /* Constant.swift in Sources */,
+				DF58A13B1F14A98B003A3075 /* CustomCell.swift in Sources */,
+				DF58A1391F14A6AE003A3075 /* EmployeeDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF58A1461F14AA8F003A3075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF58A1681F14C181003A3075 /* Model.swift in Sources */,
+				DF58A1561F14AA8F003A3075 /* NotificationController.swift in Sources */,
+				DF58A1661F14AB05003A3075 /* MainTableType.swift in Sources */,
+				DF58A1541F14AA8F003A3075 /* ExtensionDelegate.swift in Sources */,
+				DF58A1521F14AA8F003A3075 /* InterfaceController.swift in Sources */,
+				DF58A1691F14C184003A3075 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF58A14D1F14AA8F003A3075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF58A1491F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension Extension */;
+			targetProxy = DF58A14C1F14AA8F003A3075 /* PBXContainerItemProxy */;
+		};
+		DF58A15B1F14AA90003A3075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF58A13D1F14AA8F003A3075 /* FirstWatchOSApp WatchKit Extension */;
+			targetProxy = DF58A15A1F14AA90003A3075 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DF58A1261F14A421003A3075 /* Main.storyboard */ = {
@@ -158,6 +380,14 @@
 				DF58A12C1F14A421003A3075 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DF58A1401F14AA8F003A3075 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF58A1411F14AA8F003A3075 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +512,72 @@
 			};
 			name = Release;
 		};
+		DF58A15E1F14AA90003A3075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "FirstWatchOSApp WatchKit Extension Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exilant.EmployeeDetail-WatchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		DF58A15F1F14AA90003A3075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "FirstWatchOSApp WatchKit Extension Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exilant.EmployeeDetail-WatchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		DF58A1621F14AA90003A3075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = FirstWatchOSApp_WatchKit_Extension_Extension;
+				INFOPLIST_FILE = "FirstWatchOSApp WatchKit Extension/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exilant.EmployeeDetail-WatchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		DF58A1631F14AA90003A3075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = FirstWatchOSApp_WatchKit_Extension_Extension;
+				INFOPLIST_FILE = "FirstWatchOSApp WatchKit Extension/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exilant.EmployeeDetail-WatchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -299,6 +595,22 @@
 			buildConfigurations = (
 				DF58A1321F14A421003A3075 /* Debug */,
 				DF58A1331F14A421003A3075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF58A15D1F14AA90003A3075 /* Build configuration list for PBXNativeTarget "FirstWatchOSApp WatchKit Extension Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF58A15E1F14AA90003A3075 /* Debug */,
+				DF58A15F1F14AA90003A3075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF58A1611F14AA90003A3075 /* Build configuration list for PBXNativeTarget "FirstWatchOSApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF58A1621F14AA90003A3075 /* Debug */,
+				DF58A1631F14AA90003A3075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

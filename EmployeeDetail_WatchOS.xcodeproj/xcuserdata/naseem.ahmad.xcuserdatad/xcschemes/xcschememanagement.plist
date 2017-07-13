@@ -9,10 +9,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FirstWatchOSApp WatchKit Extension (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>FirstWatchOSApp WatchKit Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>DF58A11E1F14A421003A3075</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF58A13D1F14AA8F003A3075</key>
 		<dict>
 			<key>primary</key>
 			<true/>
